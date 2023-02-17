@@ -7,7 +7,9 @@
 */
 int main(void)
 {
-	for (char ch = '0'; ch <= '9'; ch++)
+	char ch;
+
+	for (ch = '0'; ch <= '9'; ch++)
 		putchar(ch);
 	putchar('\n');
 	return (0);

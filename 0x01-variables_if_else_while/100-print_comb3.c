@@ -7,9 +7,12 @@
 */
 int main(void)
 {
-	for (char ch = '0'; ch <= '9'; ch++)
+	char ch;
+	char ch2;
+
+	for (ch = '0'; ch <= '9'; ch++)
 	{
-		for (char ch2 = ch; ch2 <= '9'; ch2++)
+		for (ch2 = ch; ch2 <= '9'; ch2++)
 		{
 			if (ch != ch2)
 			{
