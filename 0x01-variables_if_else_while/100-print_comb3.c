@@ -7,18 +7,18 @@
 */
 int main(void)
 {
-	char ch;
-	char ch2;
+	int ch;
+	int ch2;
 
-	for (ch = '0'; ch <= '9'; ch++)
+	for (ch = 48; ch <= 57; ch++)
 	{
-		for (ch2 = ch; ch2 <= '9'; ch2++)
+		for (ch2 = ch; ch2 <= 57; ch2++)
 		{
 			if (ch != ch2)
 			{
 				putchar(ch);
 				putchar(ch2);
-				if (ch == '8' && ch2 == '9')
+				if (ch == 56 && ch2 == 57)
 				{
 					break;
 				}
