@@ -2,16 +2,6 @@
 #include "main.h"
 
 /**
-* main - Main Entry point of program
-*
-* Return: 0 if successful
-*/
-int main(void)
-{
-	return (0);
-}
-
-/**
  * print_to_98 -  prints 9 natural numbers up to 98
 (* @n: int
  *

@@ -1,16 +1,6 @@
 #include "main.h"
 
 /**
-* main - Main Entry point of program
-*
-* Return: 0 if successful
-*/
-int main(void)
-{
-	return (0);
-}
-
-/**
  * add - calculate absolute value on n
 (* @num_1: int
  * @num_2: int

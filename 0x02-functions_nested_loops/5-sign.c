@@ -1,16 +1,6 @@
 #include "main.h"
 
 /**
-* main - Main Entry point of program
-*
-* Return: 0 if successful
-*/
-int main(void)
-{
-	return (0);
-}
-
-/**
 * print_sign - Checks if char is lowercase
 (* @n: int
 *
