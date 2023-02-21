@@ -5,7 +5,7 @@
 (* @n: int
 *
 * Description: value to calculate absolute value of)?
-* Return: absolute value of n 
+* Return: absolute value of n
 */
 int _abs(int n)
 {
