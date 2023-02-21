@@ -1,0 +1,45 @@
+#include "main.h"
+
+/**
+* main - Main Entry point of program
+*
+* Return: 0 if successful
+*/
+int main(void)
+{
+	return (0);
+}
+
+/**
+* times_table -  prints 9 times table
+*
+* Return: void
+*/
+void times_table(void)
+{
+	int n1, n2, res;
+
+	for (n1 = 0; n1 <= 9; n1++)
+	{
+		for (n2 = 0; n2 <= 9; n2++)
+		{
+			res = n1 * n2;
+			if (res > 9)
+			{
+				_putchar((res / 10) + 48);
+				_putchar((res % 10) + 48);
+			}
+			else
+			{
+				_putchar(res + 48);
+			}
+			if (n2 != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
+		}
+		_putchar('\n');
+	}
+}
