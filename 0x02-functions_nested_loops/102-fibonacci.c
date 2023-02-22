@@ -19,20 +19,20 @@ int main(void)
 */
 void print_50_fibonacci(void)
 {
-	double n_1;
-	double n_2;
+	unsigned long int n_1;
+	unsigned long int n_2;
 	int count;
-	double fib_num;
+	unsigned long int fib_num;
 
 	n_1 = 2;
 	n_2 = 1;
 
-	printf("%lf, %lf, ", n_2, n_1);
+	printf("%lu, %lu, ", n_2, n_1);
 
 	for (count = 0; count < 48; count++)
 	{
 		fib_num = n_1 + n_2;
-		printf("%lf", fib_num);
+		printf("%lu", fib_num);
 		n_2 = n_1;
 		n_1 = fib_num;
 		if (count != 47)
