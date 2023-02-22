@@ -27,7 +27,7 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-				if (n1 * (n2 + 1) < 9)
+				if (n1 * (n2 + 1) < 10)
 					_putchar(' ');
 			}
 		}
