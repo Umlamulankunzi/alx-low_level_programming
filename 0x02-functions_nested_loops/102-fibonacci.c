@@ -27,12 +27,12 @@ void print_50_fibonacci(void)
 	n_1 = 2;
 	n_2 = 1;
 
-	printf("%d, %d, ", n_2, n_1);
+	printf("%lf, %lf, ", n_2, n_1);
 
 	for (count = 0; count < 48; count++)
 	{
 		fib_num = n_1 + n_2;
-		printf("%d", fib_num);
+		printf("%lf", fib_num);
 		n_2 = n_1;
 		n_1 = fib_num;
 		if (count != 47)
