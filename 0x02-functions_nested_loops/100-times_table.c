@@ -21,7 +21,7 @@ int main(void)
 */
 void print_times_table(int n)
 {
-	int num_1, num_2, res;
+	int num_1, num_2, res, next;
 
 	for (num_1 = 0; num_1 <= n; num_1++)
 	{
@@ -33,7 +33,21 @@ void print_times_table(int n)
 			res = num_1 * num_2;
 				printf("%d", res);
 			if (num_2 != n)
-				printf(",  ");
+			{
+				next = num_1 * (num_2 + 1);
+				if (next >= 100)
+				{
+					printf(", ");
+				}
+				else if (next >= 10)
+				{
+					printf(",  ");
+				}
+				else
+				{
+					printf(",   ");
+				}
+			}
 			else
 				printf("\n");
 		}
