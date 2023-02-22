@@ -2,17 +2,6 @@
 #include "main.h"
 
 /**
-* main - Main Entry point of program
-*
-* Return: 0 if successful
-*/
-int main(void)
-{
-	print_times_table(10);
-	return (0);
-}
-
-/**
 * print_times_table -  prints n times table
 (* @n: int
  *
