@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* _isdigit - multiply 2 numbers
-* @c: int
+* mul - multiply 2 numbers
+* @a: int
 * @b: int
 * Description: @c checked if is digit
 * Return: product of parameters @a & @b
