@@ -28,9 +28,13 @@ int is_prime(long int n)
 	int i;
 
 	if (n <= 1)
+	{
 		return (0);
+	}
 	else if (n == 2)
+	{
 		return (1);
+	}
 	else
 	{
 		for (i = 2; i <= (n / 2); i++)
@@ -57,7 +61,9 @@ long int high_factor(long int num)
 	for (n = 2; n <= factor; n++)
 	{
 		if (is_prime(factor))
+		{
 			break;
+		}
 		else
 		{
 			if ((factor % n == 0) && is_prime(n))
