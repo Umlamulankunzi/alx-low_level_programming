@@ -2,7 +2,7 @@
 
 /**
 * print_triangle - print triangle of size @size using #
-* @size: int size of triangle 
+* @size: int size of triangle
 * Description: print triangle using # char of size @size
 */
 void print_triangle(int size)
