@@ -15,5 +15,6 @@ void fizz_buzz(void);
 void print_triangle(int size);
 int is_prime(long int);
 long int high_factor(long int);
+void print_number(int n);
 
 #endif /* MAIN_H */
