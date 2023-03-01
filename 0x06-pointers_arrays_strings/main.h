@@ -15,5 +15,11 @@ char *leet(char *str);
 char leet_char(char c);
 char *rot13(char *);
 char rot13_char(char);
+void print_number(int n);
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+void print_buffer(char *b, int size);
+int is_printable(int ch);
+void print_hex(char *b, int start, int end);
+void print_ascii(char *b, int start, int end);
 
 #endif /* MAIN_H */

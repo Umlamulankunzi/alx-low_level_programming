@@ -15,38 +15,33 @@ char to_upper(char c)
 
 
 /**
-* cap_string - convert lowercase char to uppercase if preceded by seperator
-* @str: string
-* Return: string
-*/
-char *cap_string(char *str)
+ * cap_string - converts all lowercase words after a seperator
+ * @s: string.
+ * Return: pointer to @s.
+ */
+char *cap_string(char *s)
 {
-	int i;
-	int sep;
+	int count;
 
-	sep = 0;
-
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		if ((str[i] == ' ') || (str[i] == '\t') || (str[i] == '\n') ||
-			(str[i] == ',') || (str[i] == ';') || (str[i] == '.') ||
-			(str[i] == '!') || (str[i] == '?') || (str[i] == '"') ||
-			(str[i] == '(') || (str[i] == ')') || (str[i] == '{') ||
-			(str[i] == '}'))
+	count = 0;
+	while (s[count] != '\0')
+	{/* if next character after count is a char , capitalise it */
+		if (s[0] >= 97 && s[0] <= 122)
 		{
-			sep = 1;
-			continue;
+			s[0] = to_upper(s[0]);
 		}
-
-		if (str[i] >= 97 || str[i] <= 122)
+		if (s[count] == ' ' || s[count] == '\t' || s[count] == '\n'
+		    || s[count] == ',' || s[count] == ';' || s[count] == '.'
+		    || s[count] == '.' || s[count] == '!' || s[count] == '?'
+		    || s[count] == '"' || s[count] == '(' || s[count] == ')'
+		    || s[count] == '{' || s[count] == '}')
 		{
-			if (sep)
+			if (s[count + 1] >= 97 && s[count + 1] <= 122)
 			{
-				str[i] = to_upper(str[i]);
-				sep = 0;
+				s[count + 1] = to_upper(s[count + 1]);
 			}
 		}
+		count++;
 	}
-
-	return (str);
+	return (s);
 }
