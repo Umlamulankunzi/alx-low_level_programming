@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * is_printable - checks if char @n is a printable
- * @n: integer
+ * is_printable - checks if char @ch is a printable
+ * @ch: integer
  * Return: 1 if true, 0 if false
  */
 int is_printable(int ch)
