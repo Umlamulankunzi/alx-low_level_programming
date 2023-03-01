@@ -13,6 +13,7 @@ char *cap_string(char *);
 char to_upper(char);
 char *leet(char *str);
 char leet_char(char c);
-
+char *rot13(char *);
+char rot13_char(char);
 
 #endif /* MAIN_H */
