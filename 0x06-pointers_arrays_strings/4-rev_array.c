@@ -8,19 +8,16 @@
 */
 void reverse_array(int *a, int n)
 {
-	int temp_arr[1000], i, j;
+	int temp, i, limit;
 
-	j = n - 1;
+	n--;
+	limit = n / 2;
 
-
-	for (i = 0; i <= n; i++)
+	for (i = 0; i <= limit; i++)
 	{
-		temp_arr[i] = a[j];
-		j--;
-	}
-
-	for (i = 0; i <= n; i++)
-	{
-		a[i] = temp_arr[i];
+		temp = a[i];
+		a[i] = a[n];
+		a[n] = temp;
+		n--;
 	}
 }
