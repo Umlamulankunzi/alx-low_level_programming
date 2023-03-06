@@ -1,6 +1,6 @@
-# Learning C : More Pointers, Arrays and Strings.
+# Learning C :Even  More Pointers, Arrays and Strings.
 
-Directocty cantaining my solutions to questions on More Pointers, Arrays and Strings.
+Directocty cantaining my solutions to questions on Even More Pointers, Arrays and Strings.
 
 ## Description
 
