@@ -31,5 +31,5 @@ int sqrt_by_repeated_addition_recursion(int n, int a)
 		return (-1);
 	if (a * a == n)
 		return (a);
-	return (actual_sqrt_recursion(n, a + 1));
+	return (sqrt_by_repeated_addition_recursion(n, a + 1));
 }

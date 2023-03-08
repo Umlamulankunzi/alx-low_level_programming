@@ -25,13 +25,13 @@ int is_palindrome(char *s)
  */
 int check_palindrome(char *s, int count, int len_str)
 {
-	if (*(s + count) != *(s + len - 1))
+	if (*(s + count) != *(s + len_str - 1))
 		return (0);
 
-	if (count >= len)
+	if (count >= len_str)
 		return (1);
 
-	return (check_palindrome(s, count + 1, len - 1));
+	return (check_palindrome(s, count + 1, len_str - 1));
 }
 
 
