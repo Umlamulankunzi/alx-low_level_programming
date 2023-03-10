@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
 {
 	int sum, num;
 
+	sum = 0;
+
 	argc--;
 
 	while (argc > 0)
