@@ -13,9 +13,11 @@ int main(int argc, char *argv[])
 	int num, n_coins;
 
 	n_coins = 0;
-	argc--;
 
-	num = atoi(argv[1]);
+	if (argc == 1)
+		num = 0;
+	else
+		num = atoi(argv[1]);
 
 	if (num <= 0)
 		printf("%d\n", 0);
