@@ -14,8 +14,11 @@ int main(int argc, char *argv[])
 
 	n_coins = 0;
 
-	if (argc == 1)
-		num = 0;
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	else
 		num = atoi(argv[1]);
 
