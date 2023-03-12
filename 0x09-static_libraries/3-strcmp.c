@@ -1,60 +1,23 @@
 #include "main.h"
 
 /**
-* _strcmp - compares two strings @s1 and @s2
-* @s1: string
-* @s2: string
-* Return: negative or positive int if @s1 != @s2 or 0 if @s1 equal to @s2
-*/
+ * _strcmp - compare
+ * @s1 : pointerto char params
+ * @s2 : pointer to char params
+ * Return: *dest
+ */
+
 int _strcmp(char *s1, char *s2)
 {
-	int len_s1, index;
+	int i;
+	int R;
 
-	index = 0;
+	i = 0;
 
-	len_s1 = _strlen(s1);
-
-	while (index < len_s1)
+	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
 	{
-		if (s1[index] == '\0')
-		{
-			return (0 - s1[index]);
-		}
-		else if (s2[index] == '\0')
-		{
-			return (s2[index]);
-		}
-		else if (s1[index] == s2[index])
-		{
-			index++;
-			continue;
-		}
-		else if (s1[index] != s2[index])
-		{
-			return (s1[index] - s2[index]);
-		}
+		i++;
 	}
-
-	return (0);
-}
-
-#include "main.h"
-
-/**
-* _strlen - calculates the length of string @s
-* @s: string
-* Description: calculates the length of a string
-* Return: length of string
-*/
-int _strlen(char *s)
-{
-	int count;
-
-	count = 0;
-
-	while (s[count] != '\0')
-	{
-		count++;
-	}
-	return (count);
+	R = s1[i] - s2[i];
+	return (R);
 }

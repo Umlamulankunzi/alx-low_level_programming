@@ -1,29 +1,33 @@
 #include "main.h"
 
 /**
-* _strncat - appends the @src string to the @dest string
-* @dest: string to appended
-* @src: string to use to append
-* @n: number of bytes from @src to append to @dest
-* Return: char *
-*/
+ * _strncat - two words
+ * @dest : pointer to char param
+ * @src : pointer to char param
+ * @n : int parameter
+ * Return: *dest
+ */
+
 char *_strncat(char *dest, char *src, int n)
 {
-	int dest_last_index, src_index;
+	int m;
+	int i;
 
-	dest_last_index = 0;
-	src_index = 0;
+	m = 0;
 
-	while (dest[dest_last_index] != '\0')
+	for (i = 0; i < 1000; i++)
 	{
-		dest_last_index++;
+		if (dest[i] == '\0')
+		{
+			break;
+		}
+		m++;
 	}
-	while (src[src_index] != '\0' && src_index < n)
+
+	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
-		dest[dest_last_index] = src[src_index];
-		dest_last_index++;
-		src_index++;
+		dest[m + i] = src[i];
 	}
-	dest[dest_last_index] = '\0';
+	dest[m + i] = '\0';
 	return (dest);
 }
