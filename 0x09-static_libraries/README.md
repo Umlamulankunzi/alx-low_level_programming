@@ -1,6 +1,6 @@
-# Learning C : Recursion
+# Learning C : Static libraries
 
-Directocty cantaining my solutions to questions on Recursion.
+Directocty cantaining my solutions to questions on Static Libraries.
 
 ## Description
 
