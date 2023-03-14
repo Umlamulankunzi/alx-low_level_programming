@@ -17,10 +17,21 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	for (s1_size = 0; s1[s1_size] != '\0'; s1_size++)
+	if (s1 != NULL)
+	{
+		for (s1_size = 0; s1[s1_size] != '\0'; s1_size++)
+			;
+	}
+	else
+		s1_size = 0;
+
+	if (s2 != NULL)
+	{
+		for (s2_size = 0; s2[s2_size] != '\0'; s2_size++)
 		;
-	for (s2_size = 0; s2[s2_size] != '\0'; s2_size++)
-		;
+	}
+	else
+		s2_size = 0;
 
 	str_ptr = malloc(((s1_size + s2_size) * sizeof(char)) + 1);
 
