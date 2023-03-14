@@ -12,12 +12,22 @@ char *str_concat(char *s1, char *s2)
 	char *str_ptr;
 	int s1_size, s2_size, i;
 
+	if (s1 == NULL && s2 == NULL)
+	{
+		return (NULL);
+	}
+
 	for (s1_size = 0; s1[s1_size] != '\0'; s1_size++)
 		;
 	for (s2_size = 0; s2[s2_size] != '\0'; s2_size++)
 		;
-
+	
 	str_ptr = malloc(((s1_size + s2_size) * sizeof(char)) + 1);
+
+	if (str_ptr == NULL)
+	{
+		return (NULL);
+	}
 
 	for (i = 0; i < s1_size; i++)
 	{
