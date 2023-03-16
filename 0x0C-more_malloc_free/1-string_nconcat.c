@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * string_nconcat - concatenates two strings
@@ -63,20 +62,4 @@ unsigned int len_str(char *s)
 	if (*s == '\0')
 		return (0);
 	return (1 + len_str(s + 1));
-}
-
-
-/**
-* main - Entry point
-* @argc: size of argv
-* @argv: arguments to program
-* Return: 0 if successful
-*/
-int main(int argc, char *argv[])
-{
-	char *concat;
-
-	concat = string_nconcat("Best ", "School !!!", 6);
-	printf("%s\n", concat);
-	free(concat);
 }
