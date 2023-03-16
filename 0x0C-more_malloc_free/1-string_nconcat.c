@@ -17,7 +17,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 		s1 = "";
-	else if (s2 == NULL)
+
+	if (s2 == NULL)
 		s2 = "";
 
 	s1_size = len_str(s1);
@@ -29,6 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	buffer = malloc(buffer_size * sizeof(*buffer));
 	if (buffer == NULL)
 		return (NULL);
+
 	*buffer = '\0';
 
 	copy_str(s1, buffer, s1_size);
