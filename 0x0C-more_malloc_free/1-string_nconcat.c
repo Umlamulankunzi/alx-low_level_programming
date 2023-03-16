@@ -55,6 +55,7 @@ void copy_str(char *src, char *dest, unsigned int n)
 
 	for (i = 0; i < n; i++)
 		*(dest + (i + last_index)) = *(src + i);
+	*(dest + (i + last_index)) = '\0';
 }
 
 
