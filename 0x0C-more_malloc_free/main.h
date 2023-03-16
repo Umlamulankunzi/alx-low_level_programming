@@ -8,6 +8,6 @@ void copy_str(char *src, char *dest, unsigned int n);
 unsigned int len_str(char *s);
 void *_calloc(unsigned int nmemb, unsigned int size);
 int *array_range(int min, int max);
-
+void _memset_(char *s, char b, unsigned int n);
 
 #endif

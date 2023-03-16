@@ -3,6 +3,21 @@
 
 
 /**
+ * _memset_ - fills memory with a constant byte
+ * @s: memory area to be filled
+ * @b: char to copy
+ * @n: size of memory
+ */
+void _memset_(char *s, char b, unsigned int n)
+{
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+		s[i] = b;
+}
+
+
+/**
 * _calloc - allocates memory for an array, using malloc
 * @nmemb: int
 * @size: int
@@ -10,10 +25,7 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *buffer, init_value;
-	unsigned int i;
-
-	init_value = 0;
+	void *buffer;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -23,9 +35,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (buffer == NULL)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
-	{
-		buffer[i] = init_value;
-	}
-	return ((void *) buffer);
+	_memset_(buffer, 0, nmemb * size);
+
+	return (buffer);
 }
