@@ -1,12 +1,13 @@
 #include "dog.h"
 #define NULL (void *)0
 
+
 /**
- * init_dog - Initializes a variable of type struct dog.
- * @d: The dog to be initialized.
- * @name: The name of the dog.
- * @age: The age of the dog.
- * @owner: The owner of the dog.
+ * init_dog - initialise @d struct.
+ * @d: struct to initialise.
+ * @name: string dog name.
+ * @age: float dog age.
+ * @owner: string dog owner.
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {

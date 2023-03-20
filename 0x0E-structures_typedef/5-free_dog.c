@@ -1,12 +1,11 @@
-#include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "dog.h"
+
+
 /**
-* free_dog - function
-* @d: pointer to dog
-*
-* Description: function to free dogs
-* Return: 0 Success
+* free_dog - free dog structs in heap memory
+* @d: struct dog *.
 */
 void free_dog(dog_t *d)
 {
