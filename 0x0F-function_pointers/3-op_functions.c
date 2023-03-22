@@ -54,7 +54,7 @@ int op_div(int a, int b)
 
 
 /**
-* op_add - modulo divide two integers
+* op_mod - modulo divide two integers
 * @a: int
 * @b: int
 * Return: int remainder of division of @a and @b

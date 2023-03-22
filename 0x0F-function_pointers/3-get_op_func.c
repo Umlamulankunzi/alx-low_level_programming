@@ -1,7 +1,11 @@
 #include <string.h>
 #include "3-calc.h"
 
-
+/**
+* get_op_func - find operator and return function to use with operator
+* @s: operand string
+* Return: function pointer
+*/
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
