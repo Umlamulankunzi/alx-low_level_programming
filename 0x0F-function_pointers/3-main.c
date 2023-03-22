@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Too many args\n");
 		printf("Error\n");
 		exit(98);
 	}
@@ -28,7 +27,6 @@ int main(int argc, char *argv[])
 		printf("%d\n", op(num1, num2));
 	else
 	{
-		printf("%s", argv[2]);
 		printf("Error\n");
 		exit(99);
 	}
