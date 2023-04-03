@@ -11,7 +11,7 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *temp;
-	int temp_value
+	int temp_value;
 
 	if (!(*head))
 		return (0);
@@ -23,3 +23,4 @@ int pop_listint(listint_t **head)
 	free(temp_value);
 	return (ret);
 }
+
