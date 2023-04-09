@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
 * binary_to_uint - converts a binary number to an unsigned int.
 * @b: pointer to string of binary characters
@@ -57,13 +56,19 @@ unsigned int bin_char_to_int(char b)
 */
 int is_valid_binary(const char *b)
 {
+	int index = 0;
+
 	if (b == NULL)
 		return (0);
-	if (*b != '0' && *b != '1')
-		return (0);
 
-	is_valid_binary(b + 1);
+	while (b[index] != '\0')
+	{
+		if (b[index] < '0' || b[index] > '1')
+			return (0);
+		index++;
+	}
 	return (1);
+
 }
 
 
