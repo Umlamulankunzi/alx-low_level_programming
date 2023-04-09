@@ -10,6 +10,7 @@ int is_valid_binary(const char *b);
 int len_str(const char *str);
 unsigned int power(unsigned int indice);
 
+void print_binary(unsigned long int n);
 
 
 #endif
