@@ -9,7 +9,7 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-    char *buffer;
+	char *buffer;
 	int file_id;
 	ssize_t chars_read, chars_printed;
 
@@ -27,6 +27,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	chars_read = read(file_id, buffer, letters);
 	chars_printed = write(STDOUT_FILENO, buffer, chars_read);
 	free(buffer);       /** Free memory */
-    close(file_id);
-    return (chars_printed);
+	close(file_id);
+	return (chars_printed);
 }
