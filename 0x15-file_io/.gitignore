@@ -1,9 +1,0 @@
-# putchar source code
-_putchar.c
-
-# compiled programs from c code
-*.out
-
-# files created by programs
-Requiescat
-hello
