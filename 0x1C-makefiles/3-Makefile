@@ -1,0 +1,32 @@
+# compiler used
+CC = gcc
+
+# c source files
+SRC = main.c school.c
+
+# object files
+OBJ = $(SRC:.c=.o)
+
+# name of executable
+NAME = school
+
+# variable to delete files
+RM = rm -f
+
+# RULE to compile executable
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# RULE: to clean all Emacs & Vim temp files and exececutable
+clean :
+	$(RM) *~ $(NAME)
+
+# RULE: deletes object files
+oclean :
+	$(RM) $(OBJ)
+
+# RULE: deletes Emacs & Vim temp files, obj files and executable
+fclean : clean oclean
+
+# RULE: force recompilation of all source files
+re : oclean all
