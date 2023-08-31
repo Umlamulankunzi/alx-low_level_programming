@@ -1,6 +1,12 @@
+# compiler
 CC = gcc
+
+# source files
 SRC = main.c school.c
+
+# object files
 OBJ = $(SRC:.c=.o)
+
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
 .PHONY : all clean oclean fclean re
